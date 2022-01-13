@@ -1,0 +1,27 @@
+
+h{
+    &2,
+    &3,
+    &4,
+    &5,
+    &1{
+        font-family: 'Barlow Condensed', sans-serif !important;
+    }
+}
+
+.font{
+    &-bold{
+        font-weight: 700;
+    }
+
+    &-c{
+        &-white{
+            color: #ffffff;
+        }
+    }
+
+    &-20{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

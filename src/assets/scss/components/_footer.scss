@@ -1,0 +1,36 @@
+
+// Footer Style
+
+footer{
+    .footer-panel-widget{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background: rgb(0,212,255);
+        background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,186,242,1) 43%, rgba(0,114,188,1) 100%);
+
+        .footer-social-icons{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            li{
+                a{
+                    color: #ffffffff;
+                    font-size: 50px;
+
+                    @include breakpoint(medium down) { 
+                        font-size: 30px;
+                    }
+
+                    &:hover{
+                        color: #313c45;
+                    }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,211 @@
+
+.single-product-page{
+    padding-top: 120px;
+    background: #f9f9f9;
+
+    .product-info{
+       padding: 80px 30px;
+        min-height: 80vh;
+
+        &-top{
+            color: #f9f9f9;;
+            &-title{
+                color: #ffffffff;
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+            .review{
+                display: flex;
+                margin-bottom: 20px;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    margin: 0;
+                    margin-right: 10px;
+                    align-items: center;
+                    li{
+                        color: #FFFF00;
+                    }
+                }
+            }
+
+            p{
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    .product-info-top-cart-form{
+        padding-top: 30px;
+
+        .price{
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .category-list{
+            ul{
+                list-style: none;
+                align-items: center;
+                display: flex;
+                margin: 0;
+                padding: 10px 0;
+                flex-wrap: wrap;
+                li{
+                    margin: 0 5px;
+                    min-width: max-content;
+
+                    &:after{
+                        content: ',';
+                    }
+
+                    &:first-child{
+                        &:after{
+                            content: none;
+                        }
+                    }
+
+                    &:last-child{
+                        &:after{
+                            content: '.';
+                        }
+                    }
+                }
+            }
+        }
+        form{
+            .product-info-top-cart-form-number{
+                display: flex;
+                align-items: center;
+                border: 1px solid #fff;
+                width: fit-content;
+                input{
+                    width: 80px;
+                    margin: 0;
+                    background: none;
+                    border: none;
+                    color: #fff;
+                }
+
+                button{
+                    background: #ffffffff;
+                    padding: 12px;
+                    width: 150px;
+                    height: 100%;
+                    font-family: 'Barlow Condensed', sans-serif !important;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: #0072bb;
+                        color: #ffffffff;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+.review-model{
+    width: auto !important;
+}
+
+.review{
+    display: flex;
+    margin-bottom: 20px;
+    ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        margin-right: 10px;
+        align-items: center;
+        li{
+            color: #FFFF00;
+        }
+    }
+}
+
+.single-product-tab-handler{
+    .tabs{
+        background: none;
+        border:none;
+        display: flex;
+        justify-content: center;
+
+        li{
+            &.tabs-title{
+                border-bottom: 3px solid #eeeeee;
+                a{
+                    border-bottom: 3px solid transparent;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    color: #dddddd;
+                }
+                
+                &.is-active{
+                    background: none;
+                    a{
+                        border-bottom: 3px solid #5a5f636b;
+                        background: none;
+                        color: #313c45;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#related-slider{
+    .slick-slide{
+        margin: 0 20px;
+    }
+
+    .slick-list{
+        padding: 30px 0;
+    }
+    button{
+        &.prev{
+            position: absolute;
+            top: 0px;
+            left: 24px;
+            font-size: 50px;
+            z-index: 99;
+            color: #353f48;
+        }
+    
+        &.next{
+            position: absolute;
+            top: 0;
+            left: 74px;
+            font-size: 50px;
+            z-index: 99;
+            color: #353f48;
+        }
+    }
+}
+
+
+
+.single-product-tab-details{
+    .tabs-content{
+        padding: 30px;
+        background: none;
+        border: none;
+        min-height: 40vh;
+    }
+}
+
+.product-sider-nav{
+    .slick-slide{
+        opacity: .5;
+
+        &.slick-current{
+            opacity: 1;
+        }
+    }
+}

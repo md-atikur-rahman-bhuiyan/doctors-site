@@ -1,0 +1,128 @@
+
+<!-- Homepage Hero Style -->
+{{#ifequal type 'home'}}
+<section class="hero-panel" id="hero-panel">
+    <div class="hero-panel-content">
+        <h1 class="hero-panel-content-title wow animate__slideInUp" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="0" style="visibility:hidden;">Step Up to Integrative medicine & surgery</h1>
+        <h4 class="hero-panel-content-title-sub wow animate__slideInLeft" data-wow-duration="2.5s" data-wow-delay="2s" data-wow-offset="0" style="visibility:hidden;">Filling the gap between physicians, dentists, and surgeons.</h4>
+    </div>
+    <div class="hero-panel-slider">
+        <div class="hero-slider" id="hero-slider">
+            <div class="hero-img" style="background-image: url('../assets/img/slider-img.jpg');">
+                <img src="../assets/img/slider-img.jpg" alt="">
+            </div>
+            <div class="hero-img" style="background-image: url('../assets/img/slider-img-3.jpg');">
+                <img src="../assets/img/slider-img.jpg" alt="">
+            </div>
+            <div class="hero-img" style="background-image: url('../assets/img/slider-img-4.jpg');">
+                <img src="../assets/img/slider-img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero-panel-buttons wow animate__slideInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="0">
+        <button class="button wow animate__slideInUp" type="button" data-wow-duration="2.5s" data-wow-delay="1s" data-wow-offset="0">Book an Appointment <i class="fal fa-arrow-alt-circle-right"></i></button>
+    </div>
+</section>
+{{/ifequal}}
+
+
+{{#ifequal type 'page'}}
+    <section class="hero-panel page-hero" id="hero-panel" style="background-image: url('https://arisemd.com/wp-content/uploads/drmiller-office-2.jpg');">
+        <div class="page-hero-inner">
+            <div class="hero-panel-content">
+                <h1 class="hero-panel-content-title wow animate__slideInUp" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="0" style="visibility:hidden;">
+                    {{#ifpage 'services'}}
+                        Our Services
+                    {{/ifpage}}
+
+                    {{#ifpage 'about-us'}}
+                        About Us
+                    {{/ifpage}}
+
+                    {{#ifpage 'meet-dr'}}
+                        Meet Dr. Miller
+                    {{/ifpage}}
+
+                    {{#ifpage 'meet-team'}}
+                        Meet Our Team
+                    {{/ifpage}}
+
+                    {{#ifpage 'faq'}}
+                        Frequently Asked Questions
+                    {{/ifpage}}
+
+                    {{#ifpage 'contact-us'}}
+                        Contact Us
+                    {{/ifpage}}
+
+                    {{#ifpage 'doctors-note'}}
+                    Doctor’s Notes
+                    {{/ifpage}}
+                </h1>
+            </div>
+            <div class="hero-panel-buttons wow animate__slideInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="0">
+                <button class="button wow animate__slideInUp" type="button" data-wow-duration="2.5s" data-wow-delay="1s" data-wow-offset="0">Book an Appointment <i class="fal fa-arrow-alt-circle-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="page-main-text section-padding wow animate__slideInUp" data-wow-duration="2.5s" data-wow-delay=".5s" data-wow-offset="0">
+        <div class="grid-container">
+            {{#ifpage 'services'}}
+                <h2 class="page-main-text-title">
+                    We provide many evidenced-based personalized 
+                    paths to healing for our patients. Currently, 
+                    we offer expertise in integrative & functional medicine,
+                     age-management medicine, dentistry, cosmetic surgery, anesthesia, 
+                     sleep and sleep apnea, dermatology, nutrition and life coaching.
+                      No joke – we’ve got all that covered. 
+                      We use face to face in-office and telemedicine consults, group visits, 
+                      seminars and lectures, exclusive products, videos, newsletters,
+                       blog posts with music-art-poems-stories to
+                        inspire your mind and body to unlock health potential.
+                    </h2>
+            {{/ifpage}}
+
+            {{#ifpage 'about-us'}}
+                <h2 class="page-main-text-title">
+                    As an oral and facial surgeon, Dr. Miller discovered limitations in treating patients through the narrow traditional lens.  He created a space where he could Test, Optimize and Prevent disease—in style.  His T.O.P. Health model empowers patients to be more of their own best doctor.  With the guidance of a rare, single-source, oral surgeon and integrative medicine expert, Dr. Miller provides medicine “above the fray” and gives patients better control over their health.  We pride ourselves on bridging the gaps between surgeons, dentists, traditional medicine practitioners and the growing holistic medicine community – so you can get the answers you deserve.
+                    </h2>
+            {{/ifpage}}
+            {{#ifpage 'meet-dr'}}
+                <h2 class="page-main-text-title">
+                    “The ARISE Health is Wealth Event helped our clients feel like they have a competitive advantage in the aging game!” 
+
+                        <span class="display-block">– Barbara G., Financial Advisor, MI</span>
+                </h2>
+            {{/ifpage}}
+            {{#ifpage 'meet-team'}}
+                <h2 class="page-main-text-title">
+                    It takes a focused, skillful team dedicated to safety, excellence and experience to raise the hot air balloons in Cappadocia, Turkey. We take the same approach to keeping our patients soaring. Our passionate team and network partners each bring unique skills to our treatment plans with the shared goal of seeing our patients live out their bucket lists (like drifting over Love Valley in Cappadocia for a sunset balloon ride.)
+                </h2>
+            {{/ifpage}}
+
+            {{#ifpage 'faq'}}
+                <h2 class="page-main-text-title">
+                    If you’re used to working with doctors at “big box” hospitals, a private practice integrative doctor may be confusing and raise some questions. We understand, we’re different on purpose, but that’s why we can help. We’re happy to answer questions, and with your trust…get to the root of your health concern.
+                </h2>
+            {{/ifpage}}
+
+            {{#ifpage 'contact-us'}}
+                <h2 class="page-main-text-title">
+                    We Offer In-Office and Telemedicine Consults
+                    <br>
+                    <span class="font-20">
+                        With experience in holistic and integrative medicine, cosmetic surgery, dermatology, and dentistry we have you covered. If you have a micronutrient deficiency due to an aging gut; loss of collagen and wrinkles; sleep and sleep apnea issues; stress hormone imbalances; dental breakdown; or need growth factors for arthritis we have the experience to help you optimize your aging body.
+                    </span>
+                </h2>
+            {{/ifpage}}
+
+            {{#ifpage 'doctors-note'}}
+                <h2 class="page-main-text-title">
+                    Words of wisdom from Dr. Miller and staff
+                </h2>
+            {{/ifpage}}
+        </div>
+    </section>
+{{/ifequal}}
+
+
